@@ -1,0 +1,33 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"IMMZD1ClientHistoryMeasles","IMMZD1ClientHistoryMeasles","","","",0,*,"","","","null {[]} {[]}
+","IMMZ.D1 Capture Client History for Measles","Data elements for the IMMZ.D1 Capture Client History Data Dictionary for Measles.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"IMMZD1ClientHistoryMeasles.dose0","IMMZD1ClientHistoryMeasles.dose0","","","",0,1,"","","","boolean {[]} {[]}
+","Dose 0 administered","Indicates if the client has received a birth dose and/or supplementary dose","","","","","","","","","",,,,,"http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE80
+",,,,"IMMZD1ClientHistoryMeasles.dose0",0,1,"",""
+"IMMZD1ClientHistoryMeasles.completedPrimarySeries","IMMZD1ClientHistoryMeasles.completedPrimarySeries","","","",0,1,"","","","boolean {[]} {[]}
+","Completed the primary vaccination series","Indicates if the client has completed the primary vaccination series of a product/antigen. If the client has not yet completed their primary series, it means they may be expected to receive more doses to complete their vaccination regimen for the respective product/antigen.","","","","","","","","","",,,,,"http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE8
+",,,,"IMMZD1ClientHistoryMeasles.completedPrimarySeries",0,1,"",""
+"IMMZD1ClientHistoryMeasles.dateSeriesCompleted","IMMZD1ClientHistoryMeasles.dateSeriesCompleted","","","",1,1,"","","","date {[]} {[]}
+","Date when primary vaccination series was completed","The date when the client completed the primary vaccination series (per product/antigen)","","","","","","","","","",,,,,"http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE81
+",,,,"IMMZD1ClientHistoryMeasles.dateSeriesCompleted",1,1,"",""
+"IMMZD1ClientHistoryMeasles.hivStatus","IMMZD1ClientHistoryMeasles.hivStatus","","","",0,1,"","","","Coding {[]} {[]}
+","HIV status","The current human immunodeficiency virus (HIV) status of the client","","","","","","","","","",,"required","","http://smart.who.int/ig/smart-immunizations/ValueSet/IMMZ.D1.DE10","http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE10
+http://loinc.org#55277-8http://snomed.info/sct#278977008",,,,"IMMZD1ClientHistoryMeasles.hivStatus",0,1,"",""
+"IMMZD1ClientHistoryMeasles.immunocompromised","IMMZD1ClientHistoryMeasles.immunocompromised","","","",0,1,"","","","boolean {[]} {[]}
+","Immunocompromised","The client is known to be immunocompromised or immunosuppressed. This means the client has a weakened immune system and having a reduced ability to fight infections and other diseases","","","","","","","","","",,,,,"http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE16
+http://hl7.org/fhir/sid/icd-11#4B4Zhttp://loinc.org#96381-9http://snomed.info/sct#370388006",,,,"IMMZD1ClientHistoryMeasles.immunocompromised",0,1,"",""
+"IMMZD1ClientHistoryMeasles.onART","IMMZD1ClientHistoryMeasles.onART","","","",0,1,"","","","boolean {[]} {[]}
+","Currently on ART","The client is currently receiving antiretroviral therapy (ART)","","","","","","","","","",,,,,"http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE17
+",,,,"IMMZD1ClientHistoryMeasles.onART",0,1,"",""
+"IMMZD1ClientHistoryMeasles.hivExposedInfant","IMMZD1ClientHistoryMeasles.hivExposedInfant","","","",1,1,"","","","boolean {[]} {[]}
+","HIV-exposed infant","The infant is  known to be exposed to HIV (i.e. born to an HIV-infected woman)","","","","","","","","","",,,,,"http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE90
+http://hl7.org/fhir/sid/icd-11#QC60http://loinc.org#10157-6http://snomed.info/sct#438998000",,,,"IMMZD1ClientHistoryMeasles.hivExposedInfant",1,1,"",""
+"IMMZD1ClientHistoryMeasles.immuneReconstitutionAchieved","IMMZD1ClientHistoryMeasles.immuneReconstitutionAchieved","","","",1,1,"","","","boolean {[]} {[]}
+","Immune reconstitution was achieved","The client is known to have achieved immune reconstitution","","","","","","","","","",,,,,"http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE46
+",,,,"IMMZD1ClientHistoryMeasles.immuneReconstitutionAchieved",1,1,"",""
+"IMMZD1ClientHistoryMeasles.severelyImmunosuppressed","IMMZD1ClientHistoryMeasles.severelyImmunosuppressed","","","",1,1,"","","","boolean {[]} {[]}
+","Severely immunosuppressed","The client is known to be severely immunocompromised or immunosuppressed","","","","","","","","","",,,,,"http://loinc.org#96381-9
+",,,,"IMMZD1ClientHistoryMeasles.severelyImmunosuppressed",1,1,"",""
+"IMMZD1ClientHistoryMeasles.artStartDate","IMMZD1ClientHistoryMeasles.artStartDate","","","",1,1,"","","","date {[]} {[]}
+","ART start date","The date on which the client started or restarted antiretroviral therapy (ART)","","","","","","","","","",,,,,"http://smart.who.int/ig/smart-immunizations/CodeSystem/IMMZ.D1#DE49
+",,,,"IMMZD1ClientHistoryMeasles.artStartDate",1,1,"",""
